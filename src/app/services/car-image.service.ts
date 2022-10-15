@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { CarImageResponseModel } from '../models/car-imageResponseModel';
+import { CarImage } from '../models/car-image';
+import { ListResponseModel } from '../models/listResponseModel';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class CarImageService {
   
   constructor(private httpClient:HttpClient) { }
 
-  getCarImages():Observable<CarImageResponseModel>{
-    return this.httpClient.get<CarImageResponseModel>(this.apiUrl + "getall");
+  getCarImages():Observable<ListResponseModel<CarImage>>{
+    return this.httpClient.get<ListResponseModel<CarImage>>(this.apiUrl + "getall");
   }
 }

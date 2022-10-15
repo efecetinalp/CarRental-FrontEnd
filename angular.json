@@ -24,12 +24,15 @@
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/mdb-ui-kit/css/mdb.min.css",
               "src/styles.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/@popperjs/core/dist/umd/popper.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "./node_modules/mdb-ui-kit/js/mdb.min.js"
             ]
           },
           "configurations": {
