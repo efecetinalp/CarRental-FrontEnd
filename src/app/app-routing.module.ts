@@ -4,10 +4,11 @@ import { BrandComponent } from './components/brand/brand.component';
 import { CarComponent } from './components/car/car.component';
 import { ColorComponent } from './components/color/color.component';
 import { CustomerComponent } from './components/customer/customer.component';
+import { MainComponent } from './components/main/main.component';
 import { RentalComponent } from './components/rental/rental.component';
 
 const routes: Routes = [
-  {path:"", pathMatch:"full", component:CarComponent},
+  {path:"", pathMatch:"full", component:MainComponent},
   {path:"cars/getcardetails", component:CarComponent},
   {path:"brands/getall", component:BrandComponent},
   {path:"colors/getall", component:ColorComponent},

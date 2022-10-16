@@ -13,6 +13,8 @@ import { CarImageComponent } from './components/car-image/car-image.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import { RentalComponent } from './components/rental/rental.component';
 import { NaviComponent } from './components/navi/navi.component';
+import { MainComponent } from './components/main/main.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { NaviComponent } from './components/navi/navi.component';
     CarImageComponent,
     CustomerComponent,
     RentalComponent,
-    NaviComponent
+    NaviComponent,
+    MainComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

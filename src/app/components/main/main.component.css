@@ -1,0 +1,48 @@
+body{
+    background-color: wheat;
+    margin-top: 0;
+}
+
+.form-background{
+    height: 990px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(src\assets\images\bg_0.jpeg);
+    background-size:100%;
+    position: relative;
+    margin-top: 0;
+}
+
+
+.form-col{
+    margin-top: 30rem;
+    width: 700px;
+    height: 420px;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.btn{
+    margin: auto;
+    width: 50%;
+}
+
+.list-item{
+    list-style: none;
+}
+
+.icon-big{
+    height: 4rem;
+}
+
+.icon{
+    height: 8rem;
+    width: 8rem;
+    background-color: #e0bd1f;
+    border-radius: 8rem;
+    margin: auto;
+}
+
+.form-group{
+    margin-inline-end: 1rem;
+}
