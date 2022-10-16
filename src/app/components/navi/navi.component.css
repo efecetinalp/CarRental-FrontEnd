@@ -1,3 +1,33 @@
-.navbar{
-    height: 5rem;
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #cbbcb1;
+}
+
+.mask-custom {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.navbar-brand {
+  height: 7rem;
+}
+
+.logo{
+    margin-top: 1.5rem;
+    height: 3rem;
 }

@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg bg-light">
+<!-- <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="#">Project Logo</a>
+      <a class="navbar-brand" href="#"><img class="logo" src="assets/images/logo.png" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -8,6 +8,15 @@
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
@@ -26,4 +35,63 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
+
+
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+      <div class="container">
+        <a class="navbar-brand" href="#!"><img class="logo" src="assets/images/logo2.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#!">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#!">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#!">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#!">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tools</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" routerLink="/cars/getcardetails">Cars</a></li>
+                  <li><a class="dropdown-item" routerLink="/brands/getall">Brands</a></li>
+                  <li><a class="dropdown-item" routerLink="/colors/getall">Colors</a></li>
+                  <li><a class="dropdown-item" routerLink="/customers/getall">Customers</a></li>
+                  <li><a class="dropdown-item" routerLink="/rentals/getrentaldetails">Rentals</a></li>
+                </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#!">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#!">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#!">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+  </header>
