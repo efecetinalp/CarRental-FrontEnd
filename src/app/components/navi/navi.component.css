@@ -9,7 +9,7 @@
 .navbar-scrolled .nav-link,
 .navbar-scrolled .navbar-toggler-icon,
 .navbar-scrolled .navbar-brand {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 /* Color of the navbar AFTER scroll */

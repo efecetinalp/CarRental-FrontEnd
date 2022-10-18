@@ -1,53 +1,124 @@
-body{
-    background-color: wheat;
-    margin-top: 0;
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.form-background{
-    height: 1100px;
+body {
+    background-color: #f1f1f1;
+    margin-top: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #555555;
+}
+
+.form-background {
+    height: 1000px;
     background-repeat: no-repeat;
     background-position: 50%;
     background-image: url(src\assets\images\bg_2.jpeg);
-    background-size:100%;
+    background-size: 100%;
     position: relative;
     margin-top: 0;
 }
 
 
-.form-col{
+.form-col {
     margin-top: 30rem;
-    width: 700px;
-    height: 420px;
+    width: 600px;
+    height: 460px;
     padding: 2rem;
     border-radius: 2rem;
 }
 
-.btn{
+.btn {
     margin: auto;
     width: 50%;
 }
 
-.list-item{
+.list-item {
     list-style: none;
 }
 
-.icon-big{
+.icon-big {
     height: 3rem;
 }
 
-.icon{
+.icon {
     height: 8rem;
     width: 8rem;
-    background-color: #e0bd1f;
+    background-color: #c5c5c5;
     border-radius: 8rem;
     margin: auto;
 }
 
-.form-group{
+.form-group {
     margin-inline-end: 1rem;
 }
 
-.form-style{
+.form-style {
     background-color: #ffd900;
 }
+
+.mask-custom {
+    backdrop-filter: blur(10px);
+    background-color: rgba(218, 169, 127, 0.45);
+}
+
+.mask-input {
+    background-color: rgba(146, 146, 146, 0.45);
+}
+
+.ftco-section {
+    padding: 6em 0;
+    position: relative;
+}
+.ftco-about {
+    position: relative;
+    z-index: 0;
+}
+section {
+    display: block;
+}
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.img-2{
+    size: 100%;
+    background-position: 50%;
+    background-size: 100%;
+    position: relative;
+}
+
+
+
 

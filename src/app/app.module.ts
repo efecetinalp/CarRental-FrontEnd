@@ -15,6 +15,9 @@ import { RentalComponent } from './components/rental/rental.component';
 import { NaviComponent } from './components/navi/navi.component';
 import { MainComponent } from './components/main/main.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { TransactionComponent } from './components/transaction/transaction.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 @NgModule({
@@ -28,7 +31,10 @@ import { FooterComponent } from './components/footer/footer.component';
     RentalComponent,
     NaviComponent,
     MainComponent,
-    FooterComponent
+    FooterComponent,
+    TransactionComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
