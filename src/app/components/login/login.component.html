@@ -1,4 +1,4 @@
-<body class="text-center">
+<!-- <body class="text-center">
     
     <main class="form-signin w-100 m-auto">
       <form>
@@ -30,7 +30,43 @@
         <button class="w-100 btn btn-lg btn-primary" type="submit">Log in</button>
       </form>
     </main>
-    
-    
-        
-      </body>
+
+</body> -->
+
+<body>
+  <section>
+    <div class="form-container">
+      <h1>login form</h1>
+      <form action="#">
+
+        <div class="control">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email">
+        </div>
+
+        <div class="control">
+          <label for="psw">Password</label>
+          <input type="password" name="psw" id="psw">
+        </div>
+
+        <div class="link text-start mb-4">
+          <a href="#">Having trouble in sign in?</a>
+        </div>
+
+        <span>
+          <input type="checkbox"> Remember me
+        </span>
+
+        <div class="control">
+          <input type="submit" routerLink="/" value="LOGIN">
+        </div>
+
+        <div class="link">
+          <label class="mr-1" for="#">Don't have an account?</label>
+          <a routerLink="/register">Register now</a>
+        </div>
+
+      </form>
+    </div>
+  </section>
+</body>
