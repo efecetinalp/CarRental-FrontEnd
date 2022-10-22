@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TransactionComponent implements OnInit {
 
-  constructor() { }
+  myScriptElement : HTMLScriptElement;
+  constructor() {
+      this.myScriptElement = document.createElement("script")
+      this.myScriptElement.src = "src/assets/js/script.js"
+      document.body.appendChild(this.myScriptElement);
+   }
 
   ngOnInit(): void {
   }
