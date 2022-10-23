@@ -18,6 +18,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TransactionComponent } from './components/transaction/transaction.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { RegisterComponent } from './components/register/register.component';
     FooterComponent,
     TransactionComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    AdminPanelComponent
   ],
   imports: [
     BrowserModule,

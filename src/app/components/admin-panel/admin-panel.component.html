@@ -1,0 +1,96 @@
+<body class="d-flex">
+    <section>
+        <button type="button" class="btn btn-success">Add New Car</button>
+        <div class="d-flex flex-nowrap p-3" style="width: 280px;">
+            <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                        Brands
+                    </button>
+                    <div class="collapse show" id="home-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                            <li *ngFor="let brand of brands"><a
+                                    class="link-dark d-inline-flex text-decoration-none rounded">{{brand.brandName}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                        Models
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                            <li *ngFor="let carDetail of carDetails"><a
+                                    class="link-dark d-inline-flex text-decoration-none rounded">{{carDetail.modelName}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#price-collapse" aria-expanded="false">
+                        Daily Price
+                    </button>
+                    <div class="collapse" id="price-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                            <li><a class="link-dark d-inline-flex text-decoration-none rounded">Slider will be
+                                    here</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                        Colors
+                    </button>
+                    <div class="collapse" id="orders-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                            <li *ngFor="let carDetail of carDetails"><a
+                                    class="link-dark d-inline-flex text-decoration-none rounded">{{carDetail.colorName}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                        Status
+                    </button>
+                    <div class="collapse" id="account-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                            <li><a class="link-dark d-inline-flex text-decoration-none rounded">Available</a>
+                            </li>
+                            <li><a class="link-dark d-inline-flex text-decoration-none rounded">Not
+                                    available</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="container-xl">
+        <div class="row">
+            <div class="col">
+                <!--search bar-->
+                <div class="input-group mb-4">
+                    <input type="text" class="form-control" placeholder="Search products"
+                        aria-describedby="button-addon2">
+                    <button class="btn btn-outline-success" type="button" id="button-addon2">Search</button>
+                </div>
+
+                <!--routes-->
+                <div class="routes">
+                    <app-car *ngIf="true"></app-car>
+                    <app-brand *ngIf="false"></app-brand>
+                    <app-color *ngIf="false"></app-color>
+                </div>
+                <!--routes-->
+            </div>
+        </div>
+    </div>
+</body>

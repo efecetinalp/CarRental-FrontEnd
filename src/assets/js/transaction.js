@@ -1,4 +1,4 @@
-alert("hello");
+// input_credit_card(document.getElementById('credit-card'));
 
 input_credit_card = function(input)
 {
@@ -58,7 +58,8 @@ input_credit_card = function(input)
                 dd++;
             }
             if (d === groups[gi] && groups.length === gi + 1) // max length
-            { break; }
+            { break;}
+            
         }
         input.value = newV;
 
@@ -116,5 +117,3 @@ input_credit_card = function(input)
         format_and_pos(this, false);
     });
 };
-
-input_credit_card(document.getElementById('credit-card'));

@@ -6,11 +6,11 @@ import { BrandService } from 'src/app/services/brand.service';
 import { CarService } from 'src/app/services/car.service';
 
 @Component({
-  selector: 'app-car',
-  templateUrl: './car.component.html',
-  styleUrls: ['./car.component.css']
+  selector: 'app-admin-panel',
+  templateUrl: './admin-panel.component.html',
+  styleUrls: ['./admin-panel.component.css']
 })
-export class CarComponent implements OnInit {
+export class AdminPanelComponent implements OnInit {
   cars:Car[] = [];
   carDetails:CarDetail[] = [];
   brands:Brand[] = [];

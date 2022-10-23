@@ -1,25 +1,124 @@
-<!-- <div class="container text-center">
-    <div *ngIf="dataLoaded==false" class="spinner-border text-secondary" role="status">
-        <span class="visually-hidden">Loading...</span>
+<body>
+    <div class="container text-center">
+        <div *ngIf="dataLoaded==false" class="spinner-border text-secondary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
     </div>
-</div> -->
 
-<div class="container text-center">
-    <table *ngIf="dataLoaded==true" class="table">
-        <thead>
-            <th>Car Id</th>
-            <th>Car Name</th>
-            <th>Brand Name</th>
-            <th>Color Name</th>
-            <th>Daily Price</th>
-        </thead>
+    <div class="container">
+        <div class="row">
+            <!--<div class="col-2">
 
-        <tr *ngFor="let carDetail of carDetails">
-            <td>{{carDetail.carId}}</td>
-            <td>{{carDetail.carName}}</td>
-            <td>{{carDetail.brandName}}</td>
-            <td>{{carDetail.colorName}}</td>
-            <td>{{carDetail.dailyPrice}}</td>
-        </tr>
-    </table>
-</div>
+                <button type="button" class="btn btn-success">Add New Car</button>
+
+                <div class="flex-shrink-0 p-3" style="width: 280px;">
+                    <ul class="list-unstyled ps-0">
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                                Brands
+                            </button>
+                            <div class="collapse show" id="home-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                                    <li *ngFor="let brand of brands"><a
+                                            class="link-dark d-inline-flex text-decoration-none rounded">{{brand.brandName}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                                Models
+                            </button>
+                            <div class="collapse" id="dashboard-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                                    <li *ngFor="let carDetail of carDetails"><a
+                                            class="link-dark d-inline-flex text-decoration-none rounded">{{carDetail.modelName}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#price-collapse" aria-expanded="false">
+                                Daily Price
+                            </button>
+                            <div class="collapse" id="price-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                                    <li><a class="link-dark d-inline-flex text-decoration-none rounded">Slider will be
+                                            here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                                Colors
+                            </button>
+                            <div class="collapse" id="orders-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                                    <li *ngFor="let carDetail of carDetails"><a
+                                            class="link-dark d-inline-flex text-decoration-none rounded">{{carDetail.colorName}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                Status
+                            </button>
+                            <div class="collapse" id="account-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                                    <li><a class="link-dark d-inline-flex text-decoration-none rounded">Available</a>
+                                    </li>
+                                    <li><a class="link-dark d-inline-flex text-decoration-none rounded">Not
+                                            available</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+            <div class="col text-center">
+                
+
+                <div>
+                    <table *ngIf="dataLoaded==true" class="table">
+                        <thead>
+                            <th>Brand</th>
+                            <th>Model</th>
+                            <th>Color</th>
+                            <th>Daily Price</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                            <th></th>
+                            <th></th>
+                        </thead>
+
+                        <tr *ngFor="let carDetail of carDetails">
+                            <td>{{carDetail.brandName}}</td>
+                            <td>{{carDetail.modelName}}</td>
+                            <td>{{carDetail.colorName}}</td>
+                            <td>{{carDetail.dailyPrice}}</td>
+                            <td>{{carDetail.description}}</td>
+                            <td>Available</td>
+                            <td>
+                                <div>
+                                    <button type="button" class="btn btn-sm btn-warning">Edit Car Details</button>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <button type="button" class="btn btn-sm btn-danger">Delete Car</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

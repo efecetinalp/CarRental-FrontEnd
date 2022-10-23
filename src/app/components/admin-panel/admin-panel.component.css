@@ -1,13 +1,38 @@
-
-body{
-    background-color: transparent;
+body {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 100vh; /*delete incase */
+    width: 100%;
+    min-height: -webkit-fill-available;
+    background-image: url(src/assets/images/bg_5.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 
-.container {
+section{
     margin-top: 12em;
+    margin-left: 7em;
+    padding: 0;
 }
 
-/* .dropdown-toggle {
+.routes{
+    margin-top: -10em;
+}
+
+.container-xl{
+    margin-top: 12em;
+    margin-left: 0;
+    padding: 0;
+}
+
+.input-group{
+    position: relative;
+    margin-left: 30em;
+    width: 40%;
+}
+
+.dropdown-toggle {
     outline: 0;
 }
 
@@ -53,4 +78,4 @@ body{
 
 .scrollarea {
     overflow-y: auto;
-} */
+}

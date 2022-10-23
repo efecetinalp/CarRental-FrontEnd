@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
 import { BrandComponent } from './components/brand/brand.component';
 import { CarComponent } from './components/car/car.component';
 import { ColorComponent } from './components/color/color.component';
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:"rentals/getrentaldetails", component:RentalComponent},
   {path:"login", component:LoginComponent},
   {path:"register", component:RegisterComponent},
-  {path:"transaction", component:TransactionComponent}
+  {path:"transaction", component:TransactionComponent},
+  {path:"dashboard", component:AdminPanelComponent}
 ];
 
 @NgModule({
